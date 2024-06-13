@@ -1,0 +1,882 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clr{
+    clear: both;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+/*
+p >> font-family: "Roboto", sans-serif;
+h >> font-family: "Source Sans 3", sans-serif;
+*/
+
+h2 .line1{
+    border-bottom: 1px solid #FF305B;
+    width: 70px;
+    margin: auto;
+}
+
+h2 .line2{
+    border-bottom: 1px solid #FF305B;
+    width: 140px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+h2 .line3{
+    border-bottom: 1px solid #FF305B;
+    width: 70px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+/* ================== Navbar ===================*/
+
+.navbar{
+    background-color: #050505dc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000000;
+}
+
+.navbar .logo {
+    float: left;
+}
+
+.navbar .logo h2{
+    margin-top: 10px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.navbar .logo h2 a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #FF305B;
+    
+}
+
+.navbar .links{
+    float: right;
+}
+
+.ul{
+    list-style-type: none;
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 14px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    transition: color 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.navbar li a:hover{
+    color: #FF305B;
+}
+
+.navbar li a.first-a{
+    color: #FF305B;
+}
+
+/* ================ start section home ==============*/
+
+
+.home{
+
+    height: 100vh;
+    background-image: url(../img/images/hero\ img.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+.overlay{
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.767);
+    height: 100%;
+}
+
+
+.home-info{
+    text-align: center; 
+    margin-top: 230px; 
+    /* position: relative;
+    top: 0;
+    left: 30%;  */
+}
+
+.home-info span{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.home-info h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: #ff305b;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.home-info p{
+    font-size: 26px;
+    font-weight: 300;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+/* =============== end section home  =================*/
+
+/* ================ start section hello ==============*/
+
+.hello{
+    background-color: white;
+    overflow: hidden;
+    margin: 70px auto;
+
+}
+
+.left-side,
+.right-side{
+    float: left;
+    width: 50%;
+    margin-top: 80px;
+}
+
+.left-side{
+    position: relative;
+}
+
+.left-side .shap{
+    width: 350px;
+    height: 380px;
+    border: 8px solid #555555 ;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+
+}
+
+.shap,
+.hello-img img{
+margin-left: 50px;
+}
+
+/* .hello-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.767);
+    opacity: 0;
+    z-index: 25;
+
+}
+
+img:hover .overlay{
+    opacity: 1;
+} */
+
+.left-side .hello-img img{
+    border-radius: 20px;
+    visibility: visible;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    
+}
+
+/* .hello-img .content{
+    position: absolute;
+    top: 47%;
+    left: 27%;
+    border: 2px solid black;
+    font-size: 4px;
+} */
+
+
+.right-side h2{
+    font-size: 34px;
+    font-weight: 600;
+    font-family: "Source Sans 3", sans-serif;
+    position: relative;
+}
+
+.right-side h2::after{
+    content: ' ';
+    height: 24px;
+    width: 5px;
+    background-color: #FF305B;
+    margin-right: 10px;
+    position: absolute;
+    top: 11px;
+    left: -12px;
+}
+
+.right-side p.paragrah {
+    border-bottom: 5px solid #555;
+    border-bottom: 25px;
+    padding-bottom: 25px;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+}
+
+.right-side p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #555;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+}
+
+hr{
+    border: none;
+    border: 0.1px dashed #555;
+    margin: 10px 0px;
+}
+
+.right-side table tr td p{
+    margin: 5px 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+.right-side table tr td p a{
+    text-decoration: none;
+    color: #555;
+}
+
+.right-side table tr td p span{
+    font-weight: bold;
+    color: black;
+    font-family: "Roboto", sans-serif;
+}
+
+.right-side .btn{
+    margin-top: 10px;
+}
+
+.right-side .btn .btn-download{
+    padding: 5px 13px;
+    background-color: #FF305B;
+    border: none;
+    border-radius: 5px;
+}
+
+.right-side .btn .btn-download a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.right-side .btn .btn-hire a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.right-side .btn .btn-hire{
+    padding: 5px 13px;
+    color: white;
+    background-color: #FF305B;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.right-side .btn .btn-hire:hover{
+    background-color: #EC2403;
+}
+
+.right-side .btn .btn-download:hover{
+    background-color: #EC2403;
+}
+
+
+
+.i-btn{
+    font-size: 15px;
+    margin-left: -10px;
+}
+/* ================ end section hello ==============*/
+
+
+/* ============ start section our services ===============*/
+
+.our-services{
+    background-color: #F1F1F1;
+}
+
+.services-text{
+    overflow: hidden;
+    position: relative;
+}
+
+
+.services-text h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    margin: 40px 0px ;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.services{
+    background-color: #F1F1F1;
+    
+}
+
+.services .item{
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 40px 15px;
+    margin: 20px 0px;
+    border-radius: 5px;
+
+}
+
+.services .item h3{
+font-size: 24px;
+font-weight: 600;
+color: #333;
+margin: 15px 0px;
+font-family: "Source Sans 3", sans-serif;
+}
+
+.services .item p{
+    font-size: 16px;
+    color: #555;
+    line-height: 25px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+.services .item:hover {
+    background-color: white;
+}
+
+.services .item:hover i{
+    color: #FF305B;
+    transform: scale(1.2);
+}
+
+i{
+    font-size: 30px;
+    transition: transform 0.8s ;
+}
+
+
+
+/* ============ end section our services ===============*/
+
+/* ============ start section our porfolio ===============*/
+
+.our-portfolio{
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.our-portfolio h2{
+    margin: 50px 0px;
+    font-size: 40px;
+    font-weight: 800px;
+    color: #333;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.our-portfolio p {
+    display: inline-block;
+    margin-left: 18px ;
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.our-portfolio .container p.all a{
+    color: red;
+}
+
+.our-portfolio .container p a{
+    text-decoration: none;
+    color: #333;
+}
+
+.portfolio-item{
+    margin-bottom: 50px;
+}
+
+.portfolio-item .item{
+    width: 33.33%;
+    float: left;
+    padding: 15px;
+    
+}
+
+.portfolio-item .item .item-img{
+    position: relative;
+}
+
+
+.item .item-img .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.541);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+
+}
+
+.item:hover .overlay{
+    opacity: 1;
+}
+
+.item .item-img .overlay i{
+    color: #eb0b55;
+    position: absolute;
+    right: 18px;
+    bottom: 12px;
+    font-size: 25px;
+}
+
+.portfolio-item .item img{
+    width: 100%;
+    transition: opacity 1s;
+
+}
+
+
+/* ============ end section our porfolio ===============*/
+
+/* ============ start section numbers ===============*/
+
+.numbers{
+
+    background-color: gainsboro;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.numbers-item{
+    text-align: center;
+    margin: 80px auto;
+    /* vertical-align: middle; */
+    /* position: absolute;
+    top: 50%;
+    transform: translate(50%  , -50%); */
+    
+    
+}
+
+.numbers-item .item{
+    width: 25%;
+    float: left;
+    
+
+}
+
+.numbers-item .item i{
+    color: #FF305B;
+    font-size: 25px;
+    margin-left: -20px;
+}
+
+.numbers-item .item h4{
+    font-size: 26px;
+    color: #333;
+    font-weight: 800;
+    margin-top: 12px;
+}
+
+.numbers-item .item p{
+    font-size: 19px;
+    color: #555;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/* ============ end section numbers ===============*/
+
+
+/* ============ start section Client's ===============*/
+
+.clients{
+    background-color: white;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.clients-text{
+    background-color: white;
+    /* text-align: center; */
+}
+
+.clients-text h2{
+    text-align: center;
+    margin: 40px 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 40px;
+    color: #333;
+
+}
+
+.alex{
+    width: 800px;
+    height: 250px;
+    background-color: #ececec;
+    margin: 70px auto;
+    /* margin-bottom: 30px; */
+    border-radius: 5px;
+    position: relative;
+}
+
+.alex .alex-shape{
+    width: 0;
+    height: 0;
+    border-top: 100px solid #FF305B;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid #FF305B;
+    z-index:-1;
+    border-top-left-radius: 5px;
+}
+
+.alex .alex-img img{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 99;
+}
+
+.alex .alex-img{
+    width: 25%;
+    float: left;
+}
+
+.alex .alex-text{
+    width: 75%;
+    float: right;
+    position: absolute;
+    top: 20px;
+    left: 200px;
+}
+
+.alex .alex-text h3{
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    font-family: "Source Sans 3", sans-serif;
+    z-index: 1000;
+    margin-left: -15px;
+    
+}
+
+.alex .alex-text .a-clients{
+    text-decoration: none;
+    color:#777 ;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Source Sans 3", sans-serif;
+    margin-left: 7px;
+
+}
+
+.alex .alex-text p {
+    color: #555;
+    font-family: "Roboto", sans-serif;
+    line-height: 25px;
+    font-size: 16px;
+    font-style: italic;
+    /* margin-top: 5px; */
+
+}
+
+.alex .alex-text i{
+    font-size: 16px;
+    color: #F1C30D;
+    margin-top: 10px;
+    margin-left: -15px;
+}
+
+.alex .alex-text .i-location{
+    color:#777 ;
+    font-size: 14px;
+}
+
+
+
+/* ============ end section Client's ===============*/
+
+/* ============ start section Blog ===============*/
+
+.blog{
+    overflow: hidden;
+    background-color: #F1F1F1;
+    margin: 100px auto;
+}
+
+.blog .blog-text h2{
+    text-align: center;
+    font-size:40px ;
+    font-weight: 800;
+    color: #333;
+    font-family: "Source Sans 3", sans-serif;
+    margin-top: 30px;
+}
+
+.card{
+    margin: 50px 0px;
+    padding: 10px;
+    width: 33.33%;
+    float: left;
+}
+
+.card .item{
+    background-color: white;
+}
+
+
+
+.card .item img span,
+h3,
+.p-blog,
+.a-blog, 
+i{ 
+    margin: 15px 0;
+    padding-left: 15px;
+}
+
+
+.card .item img{
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.card .item iframe{
+    width: 100%;
+    height: 205px;
+    margin-bottom: 12px;
+
+}
+
+.card .item span{
+    font-size: 16px;
+    color: #555;
+    font-family: "Roboto", sans-serif;
+    margin: 15px 0;
+    padding-left: 15px;
+}
+
+.card .item h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    font-family: "Source Sans 3", sans-serif;
+    transition: color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card .item h3:hover{
+    color: #FF305B;
+}
+
+.card .item p{
+    font-size:16px ;
+    line-height: 25px;
+    color: #555;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.card .item a{
+    text-decoration: none;
+    color: #3f3f3f;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    transition: color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card .item a i{
+    font-size: 14px;
+}
+
+.card .item a:hover {
+color: #FF305B;
+}
+
+/* ============ end section Blog ===============*/
+
+
+/* ============ start section Contact ===============*/
+
+.contact{
+    overflow: hidden;
+    margin: 70px auto;
+}
+
+.contact-text h2{
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "Source Sans 3", sans-serif;
+    margin-top: 50px;
+}
+
+.form{
+    width: 65%;
+    margin: 10px auto;
+    margin-top: 10px;
+    padding: 15px;
+    
+}
+
+form .name,.email{
+    font-size: 14px;
+    padding: 10px;
+    width: 49%;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 0.5px solid #777;
+
+}
+
+
+
+form .subject{
+    font-size: 14px;
+    padding: 10px;
+    width: 99%;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: 0.5px solid #777;
+}
+
+form .textarea{
+    width: 99%;
+    height: 100px;
+    font-size: 14px;
+    padding: 10px;
+    width: 99%;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: 0.5px solid #777;
+
+}
+
+form .btn-contact{
+    border: none;
+    padding: 13px 15px;
+    background-color: #FF305B;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
+.name:focus{
+    border: none;
+}
+
+
+
+/* ============ end section Contact ===============*/
+
+/* ============ start section footer ===============*/
+
+.footer{
+    background-color: #333;
+    overflow: hidden;
+    /* height: 20vh; */
+}
+
+.text-footer{
+    
+    width: 80%;
+    margin: 50px auto;
+}
+
+.text-footer .icon {
+    text-align: center;
+    
+    
+}
+
+.text-footer .icon i{
+    font-size: 25px; 
+}
+
+.text-footer .icon i:hover{
+    color: #FF305B;
+}
+
+
+
+.text-footer .p-footer p{
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.text-footer .p-footer p a{
+    color: #FF305B;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.text-footer .p-footer p a:hover{
+    text-decoration: underline;
+}
+
+/* ============ end section footer ===============*/
+
+
+
+
+
+
+
+
+
+
+
